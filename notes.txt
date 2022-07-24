@@ -1,0 +1,67 @@
+
+
+Arrays and vectors:
+1) vectors can be used to create dynamic 1D and 2D arrays.
+2) We will be using vectors throughout the course instead of arrays.
+3) unlike arrays , vectors are passed by value to the function you can still pass them by reference if need arises
+
+questions:
+
+Arrays ->
+Fizz buzz test : https://leetcode.com/problems/fizz-buzz
+
+sorting an array:
+in-built function:
+
+sorting an array
+Arrays.sort();
+
+sorting collections
+Collections.sort(vec);
+
+Hashtable:
+We want operations insert, search and erase in O(1) time. extra space but very fast. Dictionary in python acts as a hash table.
+unordered_maps and unordered_sets are the simplest implementation of unordered maps.
+
+HashMap<String, Integer> map = new HashMap<>();
+
+
+map.put("vishal", 10);
+        map.put("sachin", 30);
+        map.put("vaibhav", 20);
+
+        Integer a = map.get("vishal");
+        map.containsKey("vishal")
+
+// Iterate the map using
+        // for-each loop
+        for (Map.Entry<String, Integer> e : map.entrySet())
+            System.out.println("Key: " + e.getKey()
+                               + " Value: " + e.getValue());
+
+Hashmaps are unordered but maps are ordered
+
+does a linked list cotains a cycle?
+public class Solution {
+    public ListNode detectCycle(ListNode head) {
+        HashMap <ListNode, Boolean> hm = new HashMap <>();
+        ListNode temp = head;
+        while(temp!=null){
+            if(hm.containsKey(temp)) return temp;
+            hm.put(temp, true);
+            temp = temp.next;
+        }
+        return null;
+    }
+}
+
+pair codes
+
+
+
+
+
+
+
+
+
