@@ -57,6 +57,16 @@ public class Solution {
 
 pair codes
 
+changing Treemap to list to access key and values by index
+
+TreeMap <Integer,Integer> hm=new TreeMap<Integer,Integer>();
+
+        Set <Map.Entry<Integer,Integer>> entrySet = hm.entrySet();
+        List <Map.Entry<Integer,Integer>> list = new ArrayList<>();
+        list.get(i).getValue()
+
+
+
 
 
 
